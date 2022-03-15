@@ -3,9 +3,9 @@ import classes from "./post-grid.module.css";
 
 export default function PostGrid({ posts }) {
   return (
-    <ul>
+    <ul className={classes.grid}>
       {posts.map((post) => (
-        <PostItem post={post} />
+        <PostItem key={post.slug} post={post} />
       ))}
     </ul>
   );
