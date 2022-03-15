@@ -5,7 +5,7 @@ export default function FeaturedPosts(props) {
   return (
     <section className={classes.latest}>
       <h2>Featured Posts</h2>
-      <PostGrid posts />
+      <PostGrid posts={props.posts} />
     </section>
   );
 }
