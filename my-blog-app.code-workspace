@@ -8,6 +8,6 @@
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "prettier.endOfLine": "crlf",
-    "prettier.printWidth": 120
+    "prettier.printWidth": 160
   }
 }
