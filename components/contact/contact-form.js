@@ -1,12 +1,13 @@
-import { useState } from "react/cjs/react.production.min";
+import { useState } from "react";
 import classes from "./contact-form.module.css";
 
 export default function ContactForm() {
   const [enteredEmail, setEnteredEmail] = useState("");
   const [enteredName, setEnteredName] = useState("");
   const [enteredMessage, setEnteredMessage] = useState("");
-  function sendMessageHandler() {
+  function sendMessageHandler(e) {
     // Optionally add client-side validation
+    e.preventDefault();
     fetch("/api/contact", {
       method: "POST",
       body: JSON.stringify({
