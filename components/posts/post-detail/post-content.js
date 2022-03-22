@@ -17,7 +17,6 @@ export default function PostContent({ post }) {
       );
     },
     code(code) {
-      console.log(code);
       const { className, children } = code;
       const language = className.replace("language-", "");
       return <SyntaxHighLighter style={atomDark} language={language} children={children} />;
@@ -37,7 +36,6 @@ export default function PostContent({ post }) {
   return (
     <article className={classes.content}>
       <PostHeader title={post.title} image={imagePath} />
-      {/* <ReactMarkdown renderers={customRenders}>{post.content}</ReactMarkdown> */}
       <ReactMarkdown components={customRenders}>{post.content}</ReactMarkdown>
     </article>
   );
