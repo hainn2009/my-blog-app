@@ -6,9 +6,9 @@ import Layout from "../components/layout/layout";
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
-      <head>
+      <Head>
         <meta name="viewport" content="width=device-width, initial=scale=1" />
-      </head>
+      </Head>
       <Component {...pageProps} />
     </Layout>
   );

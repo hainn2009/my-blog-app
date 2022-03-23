@@ -9,7 +9,7 @@ export default function HomePage({ posts }) {
   return (
     <Fragment>
       <Head>
-        <title>Hai's blog</title>
+        <title>Hai&apos;s blog</title>
         <meta name="description" content="I post about web development" />
       </Head>
       <Hero />
