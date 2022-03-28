@@ -4,7 +4,7 @@ import Image from "next/image";
 import classes from "./post-item.module.css";
 
 export default function PostItem({ post: { id, title, image, exerpt, date, slug } }) {
-  const formattedDate = new Date(date).toLocaleDateString("en-US", {
+  const formattedDate = new Date(date).toLocaleDateString("en-gb", {
     day: "numeric",
     month: "long",
     year: "numeric",
