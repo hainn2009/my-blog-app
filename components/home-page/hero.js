@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import classes from "./hero.module.css";
-import profilePic from "../../public/images/site/hai.jpg";
+import profilePic from "../../public/images/site/123.jpg";
 
 export default function Hero() {
   return (
