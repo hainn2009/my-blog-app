@@ -24,7 +24,7 @@ const nextConfig = (phase) => {
   //   // };
   return {
     images: {
-      domains: ["localhost"],
+      domains: ["localhost", "https://my-blog-app-mauve.vercel.app/"],
     },
   };
 };
