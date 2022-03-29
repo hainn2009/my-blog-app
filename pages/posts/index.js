@@ -8,7 +8,7 @@ export default function AllPostsPage({ posts }) {
   return (
     <Fragment>
       <Head>
-        <title>All Posts</title>
+        <title>All Posts123</title>
         <meta name="description" content="A list of all programmig-related tutorials and posts" />
       </Head>
       <AllPosts posts={posts} />
