@@ -13,7 +13,38 @@ What is it ?
 
 ## What components we need
 
-Form, FormFeedback
+In the Input component, set the attributes valid and invalid.
+In the FormFeedback component, set the message will be displayed when input are valid or invalid.
+
+## Put it in practice
+
+```js
+import { Button, FormGroup, Label, Input, Form, FormFeedback } from 'reactstrap';
+...
+<FormGroup>
+  <Label for="youremail">Email:</Label>
+  <Input
+    type="text"
+    placeholder="Enter a valid email"
+    name="email"
+    id="youremail"
+    onChange={handleEmailChange}
+    autoFocus
+    value={email}
+    invalid={!isValid()}
+    valid={isValid()}
+    disabled={isLoading}
+  />
+  <FormFeedback invalid>{feedback.error && feedback.message}</FormFeedback>
+  <FormFeedback valid>{!feedback.error && feedback.message}</FormFeedback>
+</FormGroup>
+```
+
+And this is the result:
+Valid form
+![valid form](valid-form.png)
+Invalid form
+![invalid form](invalid-form.png)
 
 ## Conclusion
 
