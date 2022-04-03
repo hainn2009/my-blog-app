@@ -23,3 +23,17 @@ localStorage.saveItem("key", "value");
 localStorage.getItem("key");
 localStorage.removeItem("key");
 ```
+
+### Create a customs hooks to work with local storage
+
+Create useLocalStorage like this
+
+```js
+const useLocalStorage = ({ key, value }) => {
+  const [data, setData] = useState({ key, value });
+  localStorage.setItem(key, value);
+  const item = localStorage.getItem(key);
+  const setItem = (key, value) => localStorage.setItem();
+  return [item, setItem];
+};
+```
