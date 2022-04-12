@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Form from "./Form";
-import Input from "./Input";
-import TextInput from "./gist-1";
+import Form from "../../components/test/form";
+import Input from "../../components/test/input";
+import TextInput from "../../components/test/gist-1";
 
-import "./styles.css";
+// import "./styles.css";
 
-function App() {
+export default function Test() {
   const customRules = {
     weirdRule: {
       rule() {
@@ -45,5 +45,5 @@ function App() {
   );
 }
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+// const rootElement = document.getElementById("root");
+// ReactDOM.render(<App />, rootElement);
