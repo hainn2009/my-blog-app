@@ -13,12 +13,12 @@ export default function Test() {
       rule() {
         return {
           test(fieldValue) {
-            return fieldValue === "weird";
+            return fieldValue === "weird1";
           },
         };
       },
       formatter(id) {
-        return `${id} can have only one value: weird`;
+        return `${id} can have only one value: weird1`;
       },
     },
   };
