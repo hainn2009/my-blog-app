@@ -1,7 +1,7 @@
 ---
-title: Reactstrap Validation
+title: Using LocalStorage with React Hooks
 excerpt: Reactstrap has some good components and classes to support validate form. We should try to use these to make our website become better.
-image: reactstrap-validation.png
+image: local-storage.png
 isFeatured: true
 date: "2022-04-02"
 ---
