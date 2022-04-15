@@ -2,7 +2,7 @@
 title: Redirect in React Router
 excerpt: Let 's dive in how to redirect in React Router
 image: redirect-in-react-router.png
-isFeatured: false
+isFeatured: true
 date: "2022-04-15"
 ---
 
