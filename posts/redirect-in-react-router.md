@@ -16,11 +16,11 @@ In react app, to redirect we can do the following:
 // from login page
 this.props.history.push("/forgotusername" + this.props.location.search, { from: this.props.location.pathname });
 // from forgot username page
-props.history.push(props.history.location.state.from, { username: feedback.data })
+props.history.push(props.history.location.state.from, { username: feedback.data });
 ```
 
 - Call goBack method of history object
 
 ```js
-props.history.goBack()
+props.history.goBack();
 ```
