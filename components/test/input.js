@@ -8,12 +8,12 @@ const Input = (props) => {
   const fieldError = errors[id] || "";
   const { value = "" } = field;
 
-  // useEffect(() => {
-  //   addField({
-  //     field: props,
-  //     value: "",
-  //   });
-  // }, []);
+  useEffect(() => {
+    addField({
+      field: props,
+      value: "",
+    });
+  }, []);
 
   // useEffect(() => {
   //   if (field.value !== undefined) {

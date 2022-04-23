@@ -33,22 +33,21 @@ export default class Form extends Component {
   };
 
   render() {
-    // const { fields, errors } = this.state;
-    // const formCtx = {
-    //   fields,
-    //   errors,
-    //   addField: (data) => {
-    //     this.addField(data);
-    //   },
-    //   setFields: this.setFields,
-    //   validateField: this.validateField,
-    // };
-    // return (
-    //   <form action="">
-    //     <FormCtx.Provider value={formCtx}>{this.props.children}</FormCtx.Provider>
-    //   </form>
-    // );
-    return "form";
+    const { fields, errors } = this.state;
+    const formCtx = {
+      fields,
+      errors,
+      addField: (data) => {
+        this.addField(data);
+      },
+      setFields: this.setFields,
+      validateField: this.validateField,
+    };
+    return (
+      <form action="">
+        <FormCtx.Provider value={formCtx}>{this.props.children}</FormCtx.Provider>
+      </form>
+    );
   }
 
   setFields = (event, { id }) => {
