@@ -26,18 +26,18 @@ const TextInput = (props) => {
     }
   };
 
-  useEffect(() => {
-    if (value !== undefined) {
-      validateField(id);
-    }
-  }, [value, id]);
+  // useEffect(() => {
+  //   if (value !== undefined) {
+  //     validateField(id);
+  //   }
+  // }, [value, id]);
 
-  useEffect(() => {
-    addField({
-      field: props,
-      value,
-    });
-  }, []);
+  // useEffect(() => {
+  //   addField({
+  //     field: props,
+  //     value,
+  //   });
+  // }, []);
 
   const fieldProps = {
     ...restEvents,
