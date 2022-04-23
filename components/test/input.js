@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { FormCtx } from "./Form";
+import { FormCtx } from "./form";
 
 const Input = (props) => {
   const { id } = props;
