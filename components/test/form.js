@@ -48,6 +48,7 @@ export default class Form extends Component {
     //     <FormCtx.Provider value={formCtx}>{this.props.children}</FormCtx.Provider>
     //   </form>
     // );
+    return "form";
   }
 
   setFields = (event, { id }) => {
