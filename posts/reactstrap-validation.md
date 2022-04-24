@@ -48,4 +48,4 @@ Invalid form
 
 ## Conclusion
 
-Let's implement these components in our website!
+Let's implement these components in our website

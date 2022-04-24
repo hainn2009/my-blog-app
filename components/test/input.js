@@ -15,11 +15,11 @@ const Input = (props) => {
     });
   }, []);
 
-  // useEffect(() => {
-  //   if (field.value !== undefined) {
-  //     validateField(id);
-  //   }
-  // }, [value]);
+  useEffect(() => {
+    if (field.value !== undefined) {
+      validateField(id);
+    }
+  }, [value]);
 
   return field ? (
     <div>
