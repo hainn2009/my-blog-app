@@ -32,4 +32,4 @@ There are 2 ways to do that.
 
 ### 2. Create custom component
 
-Same as above
+Same as above, i will add it in somedays.
