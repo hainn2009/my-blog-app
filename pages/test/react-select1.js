@@ -5,8 +5,8 @@ import CreatableSelect from "react-select/creatable";
 import { ActionMeta, OnChangeValue } from "react-select";
 
 const options = [
-  { label: 1, value: 1 },
-  { label: 2, value: 2 },
+  { label: "Green", value: "green" },
+  { label: "Red", value: "red" },
 ];
 
 export default class CreatableSingle extends Component {
@@ -26,6 +26,10 @@ export default class CreatableSingle extends Component {
     // console.groupEnd();
   };
   render() {
-    return <CreatableSelect isClearable isMulti onChange={this.handleChange} onInputChange={this.handleInputChange} options={options} />;
+    return (
+      <div style={{ width: "400px" }}>
+        <CreatableSelect isClearable isMulti onChange={this.handleChange} onInputChange={this.handleInputChange} options={options} />;
+      </div>
+    );
   }
 }
