@@ -16,8 +16,14 @@ export default class CreatableSingle extends Component {
   //     console.log(`action: ${actionMeta.action}`);
   //     console.groupEnd();
   //   };
-  handleChange = (newValue) => {
-    console.log(newValue);
+  state = {
+    colors: [],
+  };
+  handleChange = (colors) => {
+    console.log(colors);
+    this.setState({
+      colors,
+    });
   };
   handleInputChange = (inputValue, actionMeta) => {
     // console.group("Input Changed");
@@ -26,9 +32,18 @@ export default class CreatableSingle extends Component {
     // console.groupEnd();
   };
   render() {
+    // if we don't use options but value property, what happen ? => still ok, but should use other version
     return (
       <div style={{ width: "400px" }}>
-        <CreatableSelect isClearable isMulti onChange={this.handleChange} onInputChange={this.handleInputChange} options={options} />;
+        <CreatableSelect
+          isClearable
+          isMulti
+          onChange={this.handleChange}
+          onInputChange={this.handleInputChange}
+          value={this.state.colors}
+          // options={options}
+        />
+        ;
       </div>
     );
   }

@@ -37,6 +37,8 @@ render() {
 
 ### A text box with multiitems can be input
 
+Only text box, not select box
+
 ```js
 import CreatableSelect from "react-select/creatable";
 
