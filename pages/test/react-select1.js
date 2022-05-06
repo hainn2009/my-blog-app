@@ -17,7 +17,7 @@ export default class CreatableSingle extends Component {
   //     console.groupEnd();
   //   };
   state = {
-    colors: [],
+    colors: [{ label: "test", value: "test" }],
   };
   handleChange = (colors) => {
     console.log(colors);
