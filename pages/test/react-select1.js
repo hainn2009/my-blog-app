@@ -32,7 +32,6 @@ export default class CreatableSingle extends Component {
     // console.groupEnd();
   };
   render() {
-    // if we don't use options but value property, what happen ? => still ok, but should use other version
     return (
       <div style={{ width: "400px" }}>
         <CreatableSelect
