@@ -34,15 +34,7 @@ export default class CreatableSingle extends Component {
   render() {
     return (
       <div style={{ width: "400px" }}>
-        <CreatableSelect
-          isClearable
-          isMulti
-          onChange={this.handleChange}
-          onInputChange={this.handleInputChange}
-          value={this.state.colors}
-          // options={options}
-        />
-        ;
+        <CreatableSelect isClearable isMulti onChange={this.handleChange} onInputChange={this.handleInputChange} value={this.state.colors} options={options} />;
       </div>
     );
   }
