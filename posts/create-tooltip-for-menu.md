@@ -36,7 +36,7 @@ if (this.props.collapseMenu) {
 
 ### CSS
 
-To fine tune the tooltip, we using CSS like this.
+To fine tune the tooltip, we using CSS like this
 
 ```css
 .menu-tooltip > .tooltip-inner {
