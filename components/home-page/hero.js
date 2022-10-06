@@ -4,13 +4,13 @@ import classes from "./hero.module.css";
 import profilePic from "../../public/images/site/123.jpg";
 
 export default function Hero() {
-  return (
-    <section className={classes.hero}>
-      <div className={classes.image}>
-        <Image src={profilePic} alt="An image showing Hai" width={300} height={300} />
-      </div>
-      <h1>Hi, I&apos;m Hai</h1>
-      <p>I blog about web development - especially frontend framework like React. My email: hainn2009@gmail.com</p>
-    </section>
-  );
+    return (
+        <section className={classes.hero}>
+            <div className={classes.image}>
+                <Image src={profilePic} alt="An image showing Hai" width={300} height={300} />
+            </div>
+            <h1>Hi, I&apos;m Hai</h1>
+            <p>I blog about web development - especially frontend framework like React. Contact me: hainn2009@gmail.com</p>
+        </section>
+    );
 }
