@@ -1,7 +1,7 @@
 ---
 title: A funny question about javascript
 excerpt: A funny question about javascript
-image: funny-question-about-javascript.png
+image: funny-question-about-javascript.jpg
 isFeatured: true
 date: "2022-10-06"
 ---
