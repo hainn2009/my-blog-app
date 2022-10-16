@@ -48,7 +48,7 @@ export default class CreatableSingle extends Component {
                     onInputChange={this.handleInputChange}
                     value={this.state.colors}
                     options={options}
-                    isDisabled
+                    // isDisabled
                 />
                 <Select isMulti options={options1} />
             </div>
