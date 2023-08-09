@@ -10,7 +10,7 @@ export default function Hero() {
                 <Image src={profilePic} alt="An image showing Hai" width={300} height={300} />
             </div>
             <h1>Hi, I&apos;m Hai</h1>
-            <p>I blog about web development - especially frontend framework like React. Contact me: hainn2009@gmail.com</p>
+            <p>I blog about web development - especially frontend framework like React. You can read my posts below. Contact me: hainn2009@gmail.com</p>
         </section>
     );
 }
